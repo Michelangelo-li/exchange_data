@@ -40,10 +40,9 @@ def from_baidu_epidemic_data():
 
     print(listmain_soup)
     # 获取到关于疫情的数据
-    result_string = listmain_soup.find('script', id="captain-config").get_text()
+    # result_string = listmain_soup.find('script', id="captain-config").get_text()
+    #
+    # # result_string转换成json对象
+    # result_json = json.loads(result_string)
+    # print(result_json)
 
-    # result_string转换成json对象
-    result_json = json.loads(result_string)
-    print(result_json)
-
-    case_list = result_json['component'][0]['caseList']
